@@ -17,7 +17,7 @@
 		BADE10001DE8EC2D003AEF6C /* SegmentationFault11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentationFault11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADE10031DE8EC2D003AEF6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BADE100F1DE8EC2E003AEF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BADE10171DE8EC6A003AEF6C /* SegmentationFaultError11-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentationFaultError11-Bridging-Header.h"; sourceTree = "<group>"; };
+		BADE10171DE8EC6A003AEF6C /* SegmentationFault11-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentationFault11-Bridging-Header.h"; sourceTree = "<group>"; };
 		BADE10181DE8EC6A003AEF6C /* NetworkResponseProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkResponseProcessor.h; sourceTree = "<group>"; };
 		BADE10191DE8EC6A003AEF6C /* NetworkResponseProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkResponseProcessor.m; sourceTree = "<group>"; };
 		BADE10211DE8F049003AEF6C /* SegmentationFault11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentationFault11.swift; sourceTree = "<group>"; };
@@ -58,7 +58,6 @@
 				BADE10201DE8EFF8003AEF6C /* ApplicationFiles */,
 				BADE101C1DE8EF9D003AEF6C /* Classes */,
 			);
-			name = SegmentationFault11;
 			path = SegmentationFault11;
 			sourceTree = "<group>";
 		};
@@ -95,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				BADE100F1DE8EC2E003AEF6C /* Info.plist */,
-				BADE10171DE8EC6A003AEF6C /* SegmentationFaultError11-Bridging-Header.h */,
+				BADE10171DE8EC6A003AEF6C /* SegmentationFault11-Bridging-Header.h */,
 			);
 			path = ApplicationFiles;
 			sourceTree = "<group>";
@@ -275,14 +274,13 @@
 		BADE10131DE8EC2E003AEF6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Q7NC4H2UHH;
 				INFOPLIST_FILE = SegmentationFault11/ApplicationFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.appledevelop.SegmentationFaultError11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SegmentationFaultError11/SegmentationFaultError11-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SegmentationFault11/ApplicationFiles/SegmentationFault11-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -291,14 +289,13 @@
 		BADE10141DE8EC2E003AEF6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Q7NC4H2UHH;
 				INFOPLIST_FILE = SegmentationFault11/ApplicationFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.appledevelop.SegmentationFaultError11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SegmentationFaultError11/SegmentationFaultError11-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SegmentationFault11/ApplicationFiles/SegmentationFault11-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
