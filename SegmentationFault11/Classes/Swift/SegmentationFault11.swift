@@ -10,7 +10,7 @@ import Foundation
 
 class SegmentationFault11 {
 
-    let responseProcessor = NetworkResponseProcessor()
+    let responseProcessor = NetworkResponseProcessor() // Objective-C class
     let url = URL(string: "https://example.com")!
 
     func epicFail() {
@@ -24,7 +24,7 @@ class SegmentationFault11 {
 
                 // This line causes compilation error: "Command failed due to signal: Segmentation fault: 11"
                 // Notice 2 arguments:
-                // _ = try self.responseProcessor.process(response, data: data)
+                 _ = try self.responseProcessor.process(response, data: data)
 
                 // This line causes compilation error: "Command failed due to signal: Segmentation fault: 11"
                 // Notice 3 arguments:
