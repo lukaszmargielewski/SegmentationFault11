@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BADE10001DE8EC2D003AEF6C /* SegmentationFaultError11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentationFaultError11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADE10001DE8EC2D003AEF6C /* SegmentationFault11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentationFault11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADE10031DE8EC2D003AEF6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BADE100F1DE8EC2E003AEF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BADE10171DE8EC6A003AEF6C /* SegmentationFaultError11-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentationFaultError11-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -39,26 +39,27 @@
 		BADE0FF71DE8EC2D003AEF6C = {
 			isa = PBXGroup;
 			children = (
-				BADE10021DE8EC2D003AEF6C /* SegmentationFaultError11 */,
 				BADE10011DE8EC2D003AEF6C /* Products */,
+				BADE10021DE8EC2D003AEF6C /* SegmentationFault11 */,
 			);
 			sourceTree = "<group>";
 		};
 		BADE10011DE8EC2D003AEF6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BADE10001DE8EC2D003AEF6C /* SegmentationFaultError11.app */,
+				BADE10001DE8EC2D003AEF6C /* SegmentationFault11.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BADE10021DE8EC2D003AEF6C /* SegmentationFaultError11 */ = {
+		BADE10021DE8EC2D003AEF6C /* SegmentationFault11 */ = {
 			isa = PBXGroup;
 			children = (
 				BADE10201DE8EFF8003AEF6C /* ApplicationFiles */,
 				BADE101C1DE8EF9D003AEF6C /* Classes */,
 			);
-			path = SegmentationFaultError11;
+			name = SegmentationFault11;
+			path = SegmentationFault11;
 			sourceTree = "<group>";
 		};
 		BADE101B1DE8EF92003AEF6C /* Objective-C */ = {
@@ -69,16 +70,16 @@
 				BADE10181DE8EC6A003AEF6C /* NetworkResponseProcessor.h */,
 				BADE10191DE8EC6A003AEF6C /* NetworkResponseProcessor.m */,
 			);
-			name = "Objective-C";
+			path = "Objective-C";
 			sourceTree = "<group>";
 		};
 		BADE101C1DE8EF9D003AEF6C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BADE101D1DE8EFA9003AEF6C /* Swift */,
 				BADE101B1DE8EF92003AEF6C /* Objective-C */,
+				BADE101D1DE8EFA9003AEF6C /* Swift */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		BADE101D1DE8EFA9003AEF6C /* Swift */ = {
@@ -87,7 +88,7 @@
 				BADE10031DE8EC2D003AEF6C /* AppDelegate.swift */,
 				BADE10211DE8F049003AEF6C /* SegmentationFault11.swift */,
 			);
-			name = Swift;
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		BADE10201DE8EFF8003AEF6C /* ApplicationFiles */ = {
@@ -96,15 +97,15 @@
 				BADE100F1DE8EC2E003AEF6C /* Info.plist */,
 				BADE10171DE8EC6A003AEF6C /* SegmentationFaultError11-Bridging-Header.h */,
 			);
-			name = ApplicationFiles;
+			path = ApplicationFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BADE0FFF1DE8EC2D003AEF6C /* SegmentationFaultError11 */ = {
+		BADE0FFF1DE8EC2D003AEF6C /* SegmentationFault11 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BADE10121DE8EC2E003AEF6C /* Build configuration list for PBXNativeTarget "SegmentationFaultError11" */;
+			buildConfigurationList = BADE10121DE8EC2E003AEF6C /* Build configuration list for PBXNativeTarget "SegmentationFault11" */;
 			buildPhases = (
 				BADE0FFC1DE8EC2D003AEF6C /* Sources */,
 				BADE0FFD1DE8EC2D003AEF6C /* Frameworks */,
@@ -114,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = SegmentationFaultError11;
+			name = SegmentationFault11;
 			productName = SegmentationFaultError11;
-			productReference = BADE10001DE8EC2D003AEF6C /* SegmentationFaultError11.app */;
+			productReference = BADE10001DE8EC2D003AEF6C /* SegmentationFault11.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,12 +132,13 @@
 				TargetAttributes = {
 					BADE0FFF1DE8EC2D003AEF6C = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Q7NC4H2UHH;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = BADE0FFB1DE8EC2D003AEF6C /* Build configuration list for PBXProject "SegmentationFaultError11" */;
+			buildConfigurationList = BADE0FFB1DE8EC2D003AEF6C /* Build configuration list for PBXProject "SegmentationFault11" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BADE0FFF1DE8EC2D003AEF6C /* SegmentationFaultError11 */,
+				BADE0FFF1DE8EC2D003AEF6C /* SegmentationFault11 */,
 			);
 		};
 /* End PBXProject section */
@@ -219,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -275,7 +277,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = SegmentationFaultError11/Info.plist;
+				DEVELOPMENT_TEAM = Q7NC4H2UHH;
+				INFOPLIST_FILE = SegmentationFault11/ApplicationFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.appledevelop.SegmentationFaultError11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,7 +293,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = SegmentationFaultError11/Info.plist;
+				DEVELOPMENT_TEAM = Q7NC4H2UHH;
+				INFOPLIST_FILE = SegmentationFault11/ApplicationFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.appledevelop.SegmentationFaultError11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BADE0FFB1DE8EC2D003AEF6C /* Build configuration list for PBXProject "SegmentationFaultError11" */ = {
+		BADE0FFB1DE8EC2D003AEF6C /* Build configuration list for PBXProject "SegmentationFault11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BADE10101DE8EC2E003AEF6C /* Debug */,
@@ -311,13 +315,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BADE10121DE8EC2E003AEF6C /* Build configuration list for PBXNativeTarget "SegmentationFaultError11" */ = {
+		BADE10121DE8EC2E003AEF6C /* Build configuration list for PBXNativeTarget "SegmentationFault11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BADE10131DE8EC2E003AEF6C /* Debug */,
 				BADE10141DE8EC2E003AEF6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
