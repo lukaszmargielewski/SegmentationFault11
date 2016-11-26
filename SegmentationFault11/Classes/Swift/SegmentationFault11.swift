@@ -17,56 +17,21 @@ class SegmentationFault11 {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
 
-                // !!!! SUCCES !!!!
-                // ONLY This line compiles:
-                // Notice 1 argument:
+                // !!!! SUCCES !!!! = All compiles now!
+                // !!!! See diff of `NetworkResponseProcessor.h` file for an answer.
                 _ = try self.responseProcessor.process(data)
+                _ = try self.responseProcessor.process(response, data: data)
+                _ = try self.responseProcessor.process(response, data: data, networkError: error)
 
-                // This line causes compilation error: "Command failed due to signal: Segmentation fault: 11"
-                // Notice 2 arguments:
-                 _ = try self.responseProcessor.process(response, data: data)
+                guard let networkResponse1 = NetworkResponse(urlResponse: response, data: data, networkError: error) else { return }
+                guard let networkResponse2 = NetworkResponse(urlResponse: response, data: data) else { return }
+                guard let networkResponse3 = NetworkResponse(urlResponse: response) else { return }
+                guard let networkResponse4 = NetworkResponse(data: data) else { return }
 
-                // This line causes compilation error: "Command failed due to signal: Segmentation fault: 11"
-                // Notice 3 arguments:
-                // _ = try self.responseProcessor.process(response, data: data, networkError: error)
-
-                guard let networkResponse1 = NetworkResponse(urlResponse: response, data: data, networkError: error) else {
-                    return
-                }
-                // This line causes compilation error: "Command failed due to signal: Segmentation fault: 11"
-                // Notice, that this time fault happens even with 1 argument:
-                // _ = try self.responseProcessor.processNetworkResponse(networkResponse1)
-
-                guard let networkResponse2 = NetworkResponse(urlResponse: response, data: data) else {
-                    return
-                }
-                // This line causes compilation error:
-                // "Command failed due to signal: Segmentation fault: 11"
-                // Notice, that this time fault happens even with 1 argument:
-                // _ = try self.responseProcessor.processNetworkResponse(networkResponse2)
-
-                guard let networkResponse3 = NetworkResponse(urlResponse: response) else {
-                    return
-                }
-                // This line causes compilation error:
-                // "Command failed due to signal: Segmentation fault: 11"
-                // Notice, that this time fault happens even with 1 argument:
-                // _ = try self.responseProcessor.processNetworkResponse(networkResponse3)
-
-                guard let networkResponse4 = NetworkResponse(data: data) else {
-                    return
-                }
-                // This line causes compilation error:
-                // "Command failed due to signal: Segmentation fault: 11"
-                // Notice, that this time fault happens even with 1 argument:
-                // _ = try self.responseProcessor.processNetworkResponse(networkResponse4)
-
-
-                // Just to silence warnings:
-                networkResponse1.silenceWarning()
-                networkResponse2.silenceWarning()
-                networkResponse3.silenceWarning()
-                networkResponse4.silenceWarning()
+                _ = try self.responseProcessor.processNetworkResponse(networkResponse1)
+                _ = try self.responseProcessor.processNetworkResponse(networkResponse2)
+                _ = try self.responseProcessor.processNetworkResponse(networkResponse3)
+                _ = try self.responseProcessor.processNetworkResponse(networkResponse4)
 
             } catch {
                 print("Error: \(error)")
