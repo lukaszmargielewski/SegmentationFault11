@@ -10,7 +10,6 @@
 		BADE10041DE8EC2D003AEF6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE10031DE8EC2D003AEF6C /* AppDelegate.swift */; };
 		BADE101A1DE8EC6A003AEF6C /* NetworkResponseProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE10191DE8EC6A003AEF6C /* NetworkResponseProcessor.m */; };
 		BADE10221DE8F049003AEF6C /* SegmentationFault11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE10211DE8F049003AEF6C /* SegmentationFault11.swift */; };
-		BADE10251DE8F1C6003AEF6C /* NetworkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BADE10241DE8F1C6003AEF6C /* NetworkResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +20,6 @@
 		BADE10181DE8EC6A003AEF6C /* NetworkResponseProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkResponseProcessor.h; sourceTree = "<group>"; };
 		BADE10191DE8EC6A003AEF6C /* NetworkResponseProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkResponseProcessor.m; sourceTree = "<group>"; };
 		BADE10211DE8F049003AEF6C /* SegmentationFault11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentationFault11.swift; sourceTree = "<group>"; };
-		BADE10231DE8F1C6003AEF6C /* NetworkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkResponse.h; sourceTree = "<group>"; };
-		BADE10241DE8F1C6003AEF6C /* NetworkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +61,6 @@
 		BADE101B1DE8EF92003AEF6C /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				BADE10231DE8F1C6003AEF6C /* NetworkResponse.h */,
-				BADE10241DE8F1C6003AEF6C /* NetworkResponse.m */,
 				BADE10181DE8EC6A003AEF6C /* NetworkResponseProcessor.h */,
 				BADE10191DE8EC6A003AEF6C /* NetworkResponseProcessor.m */,
 			);
@@ -171,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADE10041DE8EC2D003AEF6C /* AppDelegate.swift in Sources */,
-				BADE10251DE8F1C6003AEF6C /* NetworkResponse.m in Sources */,
 				BADE10221DE8F049003AEF6C /* SegmentationFault11.swift in Sources */,
 				BADE101A1DE8EC6A003AEF6C /* NetworkResponseProcessor.m in Sources */,
 			);

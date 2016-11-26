@@ -16,26 +16,8 @@ class SegmentationFault11 {
     func epicFail() {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
-
-                // !!!! SUCCES !!!! = All compiles now!
-                // !!!! See diff of `NetworkResponseProcessor.h` file for an answer.
-                _ = try self.responseProcessor.process(data)
-                _ = try self.responseProcessor.process(response, data: data)
                 _ = try self.responseProcessor.process(response, data: data, networkError: error)
-
-                guard let networkResponse1 = NetworkResponse(urlResponse: response, data: data, networkError: error) else { return }
-                guard let networkResponse2 = NetworkResponse(urlResponse: response, data: data) else { return }
-                guard let networkResponse3 = NetworkResponse(urlResponse: response) else { return }
-                guard let networkResponse4 = NetworkResponse(data: data) else { return }
-
-                _ = try self.responseProcessor.processNetworkResponse(networkResponse1)
-                _ = try self.responseProcessor.processNetworkResponse(networkResponse2)
-                _ = try self.responseProcessor.processNetworkResponse(networkResponse3)
-                _ = try self.responseProcessor.processNetworkResponse(networkResponse4)
-
-            } catch {
-                print("Error: \(error)")
-            }
+            } catch {}
         }.resume()
     }
 }

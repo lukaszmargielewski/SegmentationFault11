@@ -10,27 +10,10 @@
 
 @implementation NetworkResponseProcessor
 
-
-- (nullable id)processNetworkResponse:(nonnull NetworkResponse *)response
-                                error:(NSError * _Nonnull * _Nullable)error {
-    return nil;
-}
-
 - (nullable id)process:(nullable NSURLResponse *)response
                   data:(nullable NSData *)data
           networkError:(nullable NSError *)networkError
                  error:(NSError * _Nonnull * _Nullable)error {
-    return nil;
-}
-
-- (nullable id)process:(nullable NSURLResponse *)response
-                  data:(nullable NSData *)data
-                 error:(NSError * _Nonnull * _Nullable)error {
-    return nil;
-}
-
-- (nullable id)process:(nullable NSData *)response
-                 error:(NSError * _Nullable * _Nullable)error {
     return nil;
 }
 

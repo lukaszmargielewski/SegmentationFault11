@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let fault = SegmentationFault11()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // See SegmentationFault11.swift
         fault.epicFail()
         return true
     }
